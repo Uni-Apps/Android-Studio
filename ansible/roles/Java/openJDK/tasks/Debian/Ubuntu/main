@@ -1,0 +1,6 @@
+---
+- name: install openJDK 11
+  ansible.builtin.apt:
+    name: openjdk-11-jdk
+    state: present
+  become: true

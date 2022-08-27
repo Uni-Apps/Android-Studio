@@ -1,0 +1,11 @@
+---
+- name: add repo
+  ansible.builtin.apt_repository:
+    repo: ppa:maarten-fonville/android-studio
+  become: true
+
+- name: install Android Studio
+  ansible.builtin.apt:
+    pkg:
+    - android-studio
+  become: true
